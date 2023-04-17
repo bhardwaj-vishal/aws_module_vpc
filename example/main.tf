@@ -22,3 +22,6 @@ module "my-vpc" {
   prefix = "ifx-stage"
 }
 
+output "vpc-name" {
+value = module.my-vpc.vpc-id 
+}

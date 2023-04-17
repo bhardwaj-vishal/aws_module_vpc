@@ -58,3 +58,15 @@ variable "vpc-k8s-subnet-cidr" {
 variable "vpc-db-subnet-cidr" {
   type = list(string)
 }
+
+# Nat Gate Ways
+
+variable "total-nat-gateway-required" {
+  default = "1"
+}
+
+# Private Route Cidr
+
+variable "private-route-cidr" {
+  default = "0.0.0.0/0"
+}
